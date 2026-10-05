@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Writing studio — he writes</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="studio.css" />
+  </head>
+  <body>
+    <header class="site-header"><a class="brand" href="index.html">he writes<span>.</span><small>by Anupam Bhardwaj</small></a><a class="text-link" href="index.html">View website <span>→</span></a></header>
+    <main class="studio-page">
+      <div class="studio-intro"><p class="eyebrow">YOUR LOCAL WRITING ROOM</p><h1>Write, then<br /><em>publish.</em></h1><p>Your work is saved only in this browser. When you publish, it appears in the latest-writing list on your website.</p></div>
+      <section class="editor-card" aria-labelledby="editor-title"><div class="editor-heading"><h2 id="editor-title">New piece</h2><span id="save-state">Not saved</span></div>
+        <form id="story-form">
+          <div class="form-row"><label>Category<select id="category"><option>FICTION</option><option>ESSAY</option><option>THOUGHTS</option><option>POETRY</option></select></label><label>Date<input id="date" type="date" required /></label></div>
+          <label>Title<input id="title" type="text" placeholder="Give it a title" required /></label>
+          <label>Short introduction<textarea id="excerpt" rows="2" placeholder="A few words to invite the reader in" required></textarea></label>
+          <label>Your writing<textarea id="body" rows="12" placeholder="Start writing here..." required></textarea></label>
+          <div class="editor-actions"><button class="publish-button" type="submit">Publish piece <span>→</span></button><button class="clear-button" type="button" id="clear">Clear</button></div>
+        </form>
+      </section>
+      <section class="your-posts"><div class="section-label"><span>01</span><h2>Your published pieces</h2><span class="line"></span></div><div id="saved-list" class="saved-list"></div></section>
+    </main>
+    <script src="studio.js"></script>
+  </body>
+</html>
